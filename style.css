@@ -34,19 +34,25 @@ footer {
 
 #questions {
     float: right;
-    text-align: left;
     padding-top: 40px;
     width: 40%;
     height: 100%;
-    
+   
 }
+
+
 
 #answers {
     display: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 11px;
+  width: 80%;
+  
     
 }
 
 button {
+outline: none;
 cursor: pointer;
 padding: 12px 0 12px 0;
 width: 100%;
@@ -56,55 +62,65 @@ background-color: white;
 width: 80%;
 color:hsl(240, 6%, 50%);
 font-size: 12px;
+transition: 0.4s;
+font-weight: 100;
+
 
 }
+
+
+button:hover {
+    
+    color: #F47B56;
+}
+
 hr {
-   border-top:  1px solid hsl(240, 5%, 91%);
-    margin-right: 100px;
+    float: left;
+    width: 80%;
+    color:hsl(220, -2%, -51%);
 }
 
+
+
+#arrow {
+    float: right;
+}
 
 
 #img-div{
      float: left; 
      width: 60%;
-    overflow: hidden;
+     overflow: hidden;
+    
     
    
 }
 
 #line-shadow {
     
-    transform: scale(.90, .90);
-    margin-left: 8%;
+    transform: scale(.99, .99);
+    margin-left: -90%;
     margin-top: -50%; 
-    position: absolute;
-    z-index:1;
-   
-   
+
 } 
 
 #woman {
     
-    margin-top: -10%;
+    margin-top: -120%;
     margin-bottom: 50%;
-    margin-left: -7%;
-    transform: scale(1.0, 1.0); 
-    position: absolute;
-    z-index:1;
+    margin-left: -10%;
+    transform: scale(1.2, 1.0); 
  
-    
  }  
 
 
  #box {  
-   margin-left: 2%;   
+   margin-left: -36%;   
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: -34%;
   position: absolute;
-  z-index:1;
+  z-index: 1;
  
-
 }
 
 
