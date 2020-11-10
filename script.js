@@ -5,39 +5,41 @@ for (i = 0; i < button.length; i++) {
   button[i].addEventListener("click", function() {
     
 
-
+   
     /* Toggle between hiding and showing the active panel */
     var answer = this.nextElementSibling;
-    if (answer.style.display === "block") {
-        answer.style.display = "none";
-        // this.style.fontWeight = "none";
-        
-    
-    } else {
-        answer.style.display = "block";
-        // this.style.fontWeight = "700";
-        
-       
-    }
+    var arrow = this.childNodes[1];
 
+
+
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            this.style.fontWeight = "100";
+            arrow.style.transform ="rotate(360deg)";
+        
+        } else {
+            answer.style.display = "block";
+            this.style.fontWeight = "700";
+            arrow.style.transform ="rotate(180deg)";
+        
+        }
+    
+    
+    
   });
 }
 
+// function checkWidth(width) {
+//     if (width.matches) { // If media query matches
+//       document.body.style.backgroundColor = "yellow";
+//     } else {
+//       document.body.style.backgroundColor = "pink";
+//     }
+//   }
+  
+//   var width = window.matchMedia("(max-width: 375px)")
+//   checkWidth(width) // Call listener function at run time
+  
 
-let buttons = document.getElementsByTagName('button')
 
-for (button in buttons) {
-    buttons[button].onclick = function() {
-        console.log(this.style.color)
-        
-      
-        
 
-        
-        // var yellowButton = document.querySelectorAll(".yellow")[0];
-        // if (this.className == "green") {
-        //     if (yellowButton) yellowButton.className = "green";
-        //     this.className = "yellow";
-        // }
-    }
-}
