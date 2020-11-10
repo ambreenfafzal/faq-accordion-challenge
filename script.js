@@ -29,17 +29,6 @@ for (i = 0; i < button.length; i++) {
   });
 }
 
-// function checkWidth(width) {
-//     if (width.matches) { // If media query matches
-//       document.body.style.backgroundColor = "yellow";
-//     } else {
-//       document.body.style.backgroundColor = "pink";
-//     }
-//   }
-  
-//   var width = window.matchMedia("(max-width: 375px)")
-//   checkWidth(width) // Call listener function at run time
-  
 
 
 
