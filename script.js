@@ -1,9 +1,10 @@
+
 var button = document.getElementsByClassName("question");
 var i;
 
 for (i = 0; i < button.length; i++) {
   button[i].addEventListener("click", function() {
-    
+    console.log(this)
 
    
     /* Toggle between hiding and showing the active panel */

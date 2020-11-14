@@ -1,143 +1,128 @@
-style.css
 
 
-body, html{
-   
-  
-background: linear-gradient(to bottom, hsl(273, 75%, 66%) 5%, hsla(240, 73%, 66%) 50%);
-background-repeat: no-repeat;
-margin: 0;
-padding: 0;
-width: 100%;
-position: fixed;
-
+body {
+    background: linear-gradient(
+        to bottom,
+        hsl(273, 75%, 66%) 5%,
+        hsla(240, 73%, 66%) 50%
+      );
 }
 
+.wrapper {
+    
+    max-width:900px;
+    
 
-
-
-
+}
 
 
 #main-div {
-    width: 900px;
-    height: 500px;
-    margin:auto;
-    margin-top:10%;
-    border-radius: 25px;
-    padding: 0px;
-    background-color: white;
-    font-family: 'Kumbh Sans', sans-serif;
-    
+  width: 900px;
+  height: 500px;
+  margin-bottom: 200px;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 25px;
+  padding: 0px;
+  background-color: white;
+  font-family: "Kumbh Sans", sans-serif;
+ 
+  
+}
 
+.img-div {
+    /* width: 900px; */
+    height: 500px;
+    /* margin-bottom: 200px; */
+    /* margin: auto; */
+    /* padding: 0px; */
+    background-image: 
+    url(./images/illustration-woman-online-desktop.svg),
+    url(./images/bg-pattern-desktop.svg);
+
+  background-repeat: no-repeat;
+  background-size: 50%, 100%;
+  background-position: -80px 80px, -530px -260px;
+  position: relative;
+  z-index: 3;
+ 
+}
+
+.box {
+    
+    background-image: 
+    url(./images/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 195px 215px;
+    overflow: hidden;
+    position: absolute;
+    height: 37%;
+    width: 37%;
+    z-index: 5;
+  
 }
 
 footer {
-   
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    left: 0;
-    padding: 20px;
-    font-family: 'Kumbh Sans', sans-serif;
-    color:hsl(293, 58%, 66%);
-font-size: 12px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  padding: 20px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(293, 58%, 66%);
+  font-size: 12px;
 }
-
 
 #questions {
-    float: right;
-    padding-top: 40px;
-     width: 40%;
-height: 450px;
-overflow: auto;     
-
+  float: right;
+  padding-top: 40px;
+  width: 40%;
+  height: 450px;
+  overflow: auto;
+  margin-top: -500px;
+  margin-bottom: 400px;
+ 
 }
 
-
-
 #answers {
-    display: none;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 10px;
-    color:hsl(240, 6%, 50%);
+  display: none;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 10px;
+  color: hsl(240, 6%, 50%);
   width: 80%;
-  
-  
-    
 }
 
 button {
-outline: none;
-cursor: pointer;
-padding: 12px 0 12px 0;
-width: 100%;
-text-align: left;
-border: none;
-background-color: white;
-width: 80%;
-color:hsl(238, 29%, 16%);
-font-size: 12px;
-transition: 0.4s;
-font-family: 'Kumbh Sans', sans-serif;
-
+  outline: none;
+  cursor: pointer;
+  padding: 12px 0 12px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: white;
+  width: 80%;
+  color: hsl(238, 29%, 16%);
+  font-size: 12px;
+  transition: 0.4s;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-button:hover{
-    
-   
-   color:  hsl(14, 88%, 65%)
+button:hover {
+  color: hsl(14, 88%, 65%);
 }
-
-
-
-
 
 hr {
-    float: left;
-    width: 80%;
-    border: solid 1px hsl(240, 15%, 94%);;
-   
+  float: left;
+  width: 80%;
+  border: solid 1px hsl(240, 15%, 94%);
 }
-
-
 
 #arrow {
-    float: right;
+  float: right;
 }
 
 
-#img-div{
-     float: left; 
-     width: 60%;
-     overflow: hidden;
-     
-}
-
-#line-shadow {
-    
-    transform: scale(.99, .99);
-    margin-left: -90%;
-    margin-top: -50%; 
-
-} 
-
-#woman {
-    
-    margin-top: -120%;
-    margin-bottom: 50%;
-    margin-left: -10%;
-    transform: scale(1.2, 1.0); 
- 
- }  
 
 
-
-#box {  
-  margin-top: -490px;
-  margin-bottom: 700px;
-  position: absolute;
-  margin-left: -520px;
-  
- }
