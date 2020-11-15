@@ -1,66 +1,69 @@
-
-
 body {
-    background: linear-gradient(
-        to bottom,
-        hsl(273, 75%, 66%) 5%,
-        hsla(240, 73%, 66%) 50%
-      );
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%) 5%,
+    hsla(240, 73%, 66%) 50%
+  );
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
+.main-wrapper {
+
+  /* position: absolute; */
+  width: 900px;
+  margin: auto;
+ 
+}
 .wrapper {
-    
-    max-width:900px;
-    
-
+  width: 900px;
+  margin: auto;
+  margin-top: 15%;
+  /* position: fixed; */
+  /* z-index: 1; */
 }
-
 
 #main-div {
-  width: 900px;
-  height: 500px;
-  margin-bottom: 200px;
-  margin: auto;
-  margin-top: 10%;
+  /* height: 500px; */
+  /* margin-bottom: 200px; */
+  /* margin: auto; */
+  /* margin-top: 10%; */
   border-radius: 25px;
-  padding: 0px;
+  /* padding: 0px; */
   background-color: white;
   font-family: "Kumbh Sans", sans-serif;
- 
-  
+  position: relative;
+  z-index: 2;
+  margin-left: 100px;
 }
 
 .img-div {
-    /* width: 900px; */
-    height: 500px;
-    /* margin-bottom: 200px; */
-    /* margin: auto; */
-    /* padding: 0px; */
-    background-image: 
-    url(./images/illustration-woman-online-desktop.svg),
+  /* width: 900px; */
+  height: 500px;
+  /* margin-bottom: 200px; */
+  /* margin: auto; */
+  /* padding: 0px; */
+  background-image: url(./images/illustration-woman-online-desktop.svg),
     url(./images/bg-pattern-desktop.svg);
 
   background-repeat: no-repeat;
-  background-size: 50%, 100%;
-  background-position: -80px 80px, -530px -260px;
+  background-size: 60%, 120%;
+  background-position: -80px 50px, -560px -310px;
   position: relative;
   z-index: 3;
- 
 }
 
 .box {
-    
-    background-image: 
-    url(./images/illustration-box-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: 195px 215px;
-    overflow: hidden;
-    position: absolute;
-    height: 37%;
-    width: 37%;
-    z-index: 5;
-  
+  background-image: url(./images/illustration-box-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 10px 220px;
+  overflow: hidden;
+  height: 100%;
+  width: 520px;
+  position: fixed;
+  z-index: 5;
 }
 
 footer {
@@ -83,7 +86,8 @@ footer {
   overflow: auto;
   margin-top: -500px;
   margin-bottom: 400px;
- 
+  position: relative;
+  z-index: 3;
 }
 
 #answers {
@@ -122,7 +126,3 @@ hr {
 #arrow {
   float: right;
 }
-
-
-
-
